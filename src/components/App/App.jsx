@@ -1,26 +1,19 @@
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/kidiLink_logo_without_title.png';
 
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <p>
-          Edit <code>src/components/App/App.jsx</code> and save to reload.
-        </p>
-
-        <a
-          className="App-link"
-          href="https://react.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header">
+        ici le header
+        <div>logo</div>
+        <div>search bar</div>
+        <div>button/icon => fil d'actu</div>
+        <div>button connexion/déconnexion</div>
       </header>
+      <main>ici le corps de la page</main>
+      <footer>ici le footer de l'app</footer>
     </div>
   );
 }
