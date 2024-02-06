@@ -30,7 +30,8 @@ Et voilà le projet est crée.
 
 ## 2 - On installe les dépendances
 
-Pour se faire, on saisit la commande `yarn` dans le terminal en s'assurant qu'on est bien dans le repo du **Front**.
+Pour se faire, il faut installer d'abord Yarn : `npm install --global yarn` 
+Puis on saisit la commande `yarn` dans le terminal en s'assurant qu'on est bien dans le repo du **Front**.
 
 ## 3 - On lance le server et on check la config
 
