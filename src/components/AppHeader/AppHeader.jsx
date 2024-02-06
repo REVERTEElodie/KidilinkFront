@@ -1,12 +1,9 @@
-import Box from '@mui/joy/Box';
-import List from '@mui/joy/List';
-import ListDivider from '@mui/joy/ListDivider';
-import ListItem from '@mui/joy/ListItem';
-import ListItemButton from '@mui/joy/ListItemButton';
-import Home from '@mui/icons-material/Home';
-import Person from '@mui/icons-material/Person';
-import SearchIcon from '@mui/icons-material/Search';
-import Grid from '@mui/joy/Grid';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Nav from 'react-bootstrap/Nav';
 
 import logo from '../../assets/kidiLink_logo_without_title.png';
 
@@ -14,59 +11,55 @@ import './AppHeader.scss';
 
 const AppHeader = () => {
   return (
-
-    <Box component="nav" aria-label="My site" sx={{ flexGrow: 1 }}>
-      <List
-        role="menubar"
-        orientation="horizontal"
-        sx={{
-          '--List-gap': '5px',
-        }}
-      >
-        <ListDivider />
-        <ListItem role="none">
-          <ListItemButton role="menuitem" component="a" href="#horizontal-list">
-            Accueil
-          </ListItemButton>
-        </ListItem>
-        <ListDivider />
-        <ListItem role="none">
-          <ListItemButton role="menuitem" component="a" href="#horizontal-list">
-            Contact
-          </ListItemButton>
-        </ListItem>
-        <ListDivider />
-        <ListItem role="none">
-          <ListItemButton role="menuitem" component="a" href="#horizontal-list">
-            À propos
-          </ListItemButton>
-        </ListItem>
-        <ListDivider />
-        <ListItem role="none" sx={{ marginInlineStart: 'auto' }}>
-          <ListItemButton
-            role="menuitem"
-            component="a"
-            href="#horizontal-list"
-            aria-label="Profile"
-          >
-            <Person />
-          </ListItemButton>
-        </ListItem>
-      </List>
-    </Box>
+    <header className="Header">
+      <Navbar className="" expand="lg">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              src={logo}
+              width="60"
+              height="60"
+              className="d-inline-block align-top"
+              alt="Kidi' Link logo"
+            />
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+      <Navbar className="justify-content-between">
+        <Form inline>
+          <InputGroup>
+            <Form.Control
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="basic-addon1"
+            />
+            <InputGroup.Text id="basic-addon1">Send</InputGroup.Text>
+          </InputGroup>
+        </Form>
+      </Navbar>
+      <Navbar className="">
+        <Container>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home">Actus</Nav.Link>
+              <Nav.Link href="#aPropos">A propos</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <Button variant="primary" size="sm">
+        Connexion
+      </Button>{' '}
+    </header>
   );
 };
 
 export default AppHeader;
 
-/*
-
-    <header className="Header">
-      <div>logo</div>
+/* <div>logo</div>
       <div>search bar</div>
-      <div>button/icon => fil d'actu</div>
-      <div>button connexion/déconnexion</div>
-    </header>
-    */
+      <div>button/icon ...fil d'actu</div>
 
-/*<*/
+      <div>button connexion/déconnexion</div> */

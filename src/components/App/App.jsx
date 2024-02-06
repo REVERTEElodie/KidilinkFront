@@ -1,5 +1,3 @@
-import logo from '../../assets/kidiLink_logo_without_title.png';
-
 import AppHeader from '../AppHeader/AppHeader';
 import MainContainer from '../MainContainer/MainContainer';
 import AppFooter from '../AppFooter/AppFooter';
