@@ -1,15 +1,18 @@
-import AppHeader from '../AppHeader/AppHeader';
-import MainContainer from '../MainContainer/MainContainer';
-import AppFooter from '../AppFooter/AppFooter';
+import logo from '../../assets/logo.svg';
 
 import './App.scss';
+import FormContact from '../ContactForm/ContactForm';
+import Login from '../Login/Login';
+import AppHeader from '../AppHeader/AppHeader';
+import MainContainer from '../MainContainer/MainContainer';
 
 function App() {
   return (
     <div className="App">
       <AppHeader />
       <MainContainer />
-      <AppFooter />
+      <FormContact />
+      <Login />
     </div>
   );
 }

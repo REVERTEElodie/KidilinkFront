@@ -1,4 +1,4 @@
-import { Stack, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import logo from '../../assets/kidiLink_logo_without_background.png';
 
