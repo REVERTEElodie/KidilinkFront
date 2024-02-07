@@ -47,9 +47,6 @@ const AppHeader = () => {
             <Navbar className="justify-content-center">
               <Nav>
                 <Nav.Item>
-                  <Nav.Link href="#home">Accueil</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
                   <Nav.Link href="#aPropos">A propos</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>

@@ -39,9 +39,6 @@ const AppFooter = () => {
                   </Navbar.Brand>
                 </Navbar>
               </div>
-              <div className="FooterCopyRight">
-                Copyright Team Kidi&apos; Link | 2024
-              </div>
             </div>
           </Col>
           <Col md={12} lg={4}>
@@ -97,6 +94,9 @@ const AppFooter = () => {
           </Col>
         </Row>
       </Container>
+      <div className="FooterCopyRight">
+        Copyright Team Kidi&apos; Link | 2024
+      </div>
     </footer>
   );
 };
