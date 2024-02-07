@@ -1,15 +1,26 @@
-import AppHeader from '../AppHeader/AppHeader';
-import MainContainer from '../MainContainer/MainContainer';
-import AppFooter from '../AppFooter/AppFooter';
+import logo from '../../assets/logo.svg';
 
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <AppHeader />
-      <MainContainer />
-      <AppFooter />
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+
+        <p>
+          Edit <code>src/components/App/App.jsx</code> and save to reload.
+        </p>
+
+        <a
+          className="App-link"
+          href="https://react.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
