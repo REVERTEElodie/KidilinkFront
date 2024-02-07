@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Col, Form, Row } from 'react-bootstrap';
+import { Col, Form, Row, Button } from 'react-bootstrap';
 
 const FormContact = () => {
   return (
     <>
-      <h2>Formulaire de contact</h2>
+      <h2 className="mb-3 mt-3">Formulaire de contact</h2>
       <Form>
         <Row>
           <Col>
@@ -38,6 +38,11 @@ const FormContact = () => {
             <option>Soumettre une suggestion d'amélioration</option>
           </Form.Select>
         </Row>
+        <Form.Group className="mb-3 mt-3" controlId="exampleForm.ControlInput1">
+          <Button type="submit" variant="secondary">
+            Envoyer
+          </Button>
+        </Form.Group>
       </Form>
     </>
   );
