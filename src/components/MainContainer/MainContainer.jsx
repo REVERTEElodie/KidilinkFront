@@ -2,8 +2,6 @@ import { Container } from 'react-bootstrap';
 
 import logo from '../../assets/kidiLink_logo_without_background.png';
 
-import './MainContainer.scss';
-
 const MainContainer = () => {
   return (
     <main>

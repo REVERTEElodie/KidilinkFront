@@ -1,0 +1,16 @@
+// Overwrite default theme variable
+$primary:#2f74ec;
+$secondary:#844bc7;
+$success:#ff909b;
+//$info:;
+$warning:#831536;
+$danger:#831536;
+$light:#ffb66c;
+//$dark:;
+
+// $body-bg: $primary;
+$body-color: #333333;
+
+
+//import all Bootstrap default variables
+@import '../node_modules/bootstrap/scss/bootstrap';

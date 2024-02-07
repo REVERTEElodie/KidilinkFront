@@ -23,19 +23,19 @@ const Login = () => {
       <Form>
         <Row>
           <Col>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="loginForm.email">
               <Form.Control type="email" placeholder="super@parents.com" />
             </Form.Group>
           </Col>
         </Row>
         <Row>
           <Col>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="loginForm.password">
               <Form.Control type="password" placeholder="super mot de passe" />
             </Form.Group>
           </Col>
         </Row>
-        <Form.Group className="mb-3 mt-3" controlId="exampleForm.ControlInput1">
+        <Form.Group className="mb-3 mt-3" controlId="loginForm.submit">
           <Button type="submit" variant="secondary">
             Connexion
           </Button>
