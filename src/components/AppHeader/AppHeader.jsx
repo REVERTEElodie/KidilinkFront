@@ -7,8 +7,9 @@ import {
   Form,
   Navbar,
   Container,
-  Search,
 } from 'react-bootstrap';
+
+import { Search } from 'react-bootstrap-icons';
 
 import logo from '../../assets/kidiLink_logo_without_title.png';
 
