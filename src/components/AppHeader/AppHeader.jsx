@@ -10,7 +10,7 @@ import {
 } from 'react-bootstrap';
 
 import { Search } from 'react-bootstrap-icons';
-import logo from '../../assets/kidiLink_logo_without_title.png';
+import logo from '../../assets/kidiLink_logo_without_background.png';
 
 import './AppHeader.scss';
 
