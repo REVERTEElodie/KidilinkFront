@@ -1,12 +1,15 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Nav from 'react-bootstrap/Nav';
-import { Row, Col } from 'react-bootstrap';
+import {
+  Row,
+  Col,
+  Nav,
+  InputGroup,
+  Button,
+  Form,
+  Navbar,
+  Container,
+  Search,
+} from 'react-bootstrap';
 
-import { Search } from 'react-bootstrap-icons';
 import logo from '../../assets/kidiLink_logo_without_title.png';
 
 import './AppHeader.scss';

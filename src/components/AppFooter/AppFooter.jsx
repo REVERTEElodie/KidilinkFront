@@ -1,7 +1,4 @@
-import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
-import Nav from 'react-bootstrap/Nav';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Nav, Button, Navbar } from 'react-bootstrap';
 
 import logo from '../../assets/kidiLink_logo_without_title.png';
 import facebookLogo from '../../assets/img/socialMedia/facebook.svg';
@@ -43,14 +40,14 @@ const AppFooter = () => {
           </Col>
           <Col md={12} lg={4}>
             <div className="Footer-col">
-              <div>Restez connectés</div>
+              <h5>Restez connectés</h5>
               <div>
                 <Nav className="flex-row">
                   <Nav.Link href="#home">
                     <img
                       src={facebookLogo}
-                      width="32"
-                      height="32"
+                      width="28"
+                      height="28"
                       className="d-inline-block align-top"
                       alt="Facebook logo"
                     />
@@ -59,8 +56,8 @@ const AppFooter = () => {
                     {' '}
                     <img
                       src={instaLogo}
-                      width="32"
-                      height="32"
+                      width="28"
+                      height="28"
                       className="d-inline-block align-top"
                       alt="Instagram logo"
                     />
@@ -69,8 +66,8 @@ const AppFooter = () => {
                     {' '}
                     <img
                       src={linkedinLogo}
-                      width="32"
-                      height="32"
+                      width="28"
+                      height="28"
                       className="d-inline-block align-top"
                       alt="Linked'In logo"
                     />
@@ -79,8 +76,8 @@ const AppFooter = () => {
                     {' '}
                     <img
                       src={twitter_xLogo}
-                      width="32"
-                      height="32"
+                      width="28"
+                      height="28"
                       className="d-inline-block align-top"
                       alt="Twitter / X logo"
                     />
@@ -95,7 +92,7 @@ const AppFooter = () => {
         </Row>
       </Container>
       <div className="FooterCopyRight">
-        Copyright Team Kidi&apos; Link | 2024
+        <p>Copyright Team Kidi&apos; Link | 2024</p>
       </div>
     </footer>
   );
