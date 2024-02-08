@@ -22,6 +22,10 @@ function App() {
         <Route path="/about" element={<div>page : A propos</div>} />
         <Route path="/contact" element={<FormContact />} />
         <Route path="/login" element={<Login />} />
+        <Route
+          path="/legal-notice"
+          element={<div>page : Mentions légales</div>}
+        />
 
         {/* <-- Users routes --> */}
         <Route
