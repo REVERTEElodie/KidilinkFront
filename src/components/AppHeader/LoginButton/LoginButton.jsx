@@ -4,7 +4,7 @@ import './LoginButton.scss';
 
 const LoginButton = () => {
   return (
-    <Button variant="secondary" size="sm">
+    <Button href="/login" variant="secondary" size="sm">
       Connexion
     </Button>
   );

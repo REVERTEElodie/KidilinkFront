@@ -6,7 +6,7 @@ import './BrandLogo.scss';
 
 const BrandLogo = () => {
   return (
-    <Navbar.Brand href="#home">
+    <Navbar.Brand href="/">
       <img
         src={logo}
         width="60"
