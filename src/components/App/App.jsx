@@ -15,6 +15,7 @@ function App() {
     <div className="App">
       <AppHeader />
 
+      {/* <-- Début des routes --> */}
       <Routes>
         {/* <-- Common routes --> */}
         <Route path="/" element={<Home />} />
@@ -61,10 +62,7 @@ function App() {
           path="/photos"
           element={<div>page : Liste des photos d un album</div>}
         />
-        <Route
-          path="/photo/:id"
-          element={<div>page : Une photo avec commentaire (format blog)</div>}
-        />
+        <Route path="/photo/:id" element={<Photo />} />
 
         {/* <-- Devs routes delete before prod --> */}
         <Route path="/graphical-charter" element={<GraphicalCharter />} />
@@ -72,8 +70,8 @@ function App() {
 
         {/* <-- Errors routes --> */}
         <Route path="*" element={<div>404</div>} />
-        <Route path="/photo" element={<Photo />} />
       </Routes>
+      {/* <-- Fin des routes --> */}
 
       <AppFooter />
     </div>
