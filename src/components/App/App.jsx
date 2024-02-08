@@ -23,6 +23,10 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<FormContact />} />
         <Route path="/login" element={<Login />} />
+        <Route
+          path="/legal-notice"
+          element={<div>page : Mentions légales</div>}
+        />
 
         {/* <-- Users routes --> */}
         <Route

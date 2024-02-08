@@ -1,12 +1,10 @@
-import { Col, Container, Row, Nav, Button, Navbar } from 'react-bootstrap';
-
-import logo from '../../assets/kidiLink_logo_without_background.png';
-import facebookLogo from '../../assets/socialMedia/facebook.svg';
-import instaLogo from '../../assets/socialMedia/instagram.svg';
-import linkedinLogo from '../../assets/socialMedia/linkedin.svg';
-import twitter_xLogo from '../../assets/socialMedia/twitter-x.svg';
+import { Col, Container, Row } from 'react-bootstrap';
 
 import './AppFooter.scss';
+import BrandLogo from './BrandLogo/BrandLogo';
+import NavBar from './NavBar/NavBar';
+import SocialMedia from './SocialMedia/SocialMedia';
+import ContactButton from './ContactButton/ContactButton';
 
 const AppFooter = () => {
   return (
@@ -14,80 +12,14 @@ const AppFooter = () => {
       <Container fluid>
         <Row>
           <Col md={12} lg={4}>
-            <Nav className="flex-column">
-              <Nav.Link href="#home">Accueil</Nav.Link>
-              <Nav.Link href="#home">A propos</Nav.Link>
-              <Nav.Link href="#home">Mentions légales</Nav.Link>
-              <Nav.Link href="#home">Contact</Nav.Link>
-            </Nav>
+            <NavBar />
           </Col>
           <Col md={12} lg={4}>
-            <div className="Footer-col">
-              <div>
-                <Navbar>
-                  <Navbar.Brand href="#home">
-                    <img
-                      src={logo}
-                      width="100"
-                      height="100"
-                      className="d-inline-block align-top"
-                      alt="Kidi' Link logo"
-                    />
-                  </Navbar.Brand>
-                </Navbar>
-              </div>
-            </div>
+            <BrandLogo />
           </Col>
           <Col md={12} lg={4}>
-            <div className="Footer-col">
-              <h5>Restez connectés</h5>
-              <div>
-                <Nav className="flex-row">
-                  <Nav.Link href="#home">
-                    <img
-                      src={facebookLogo}
-                      width="28"
-                      height="28"
-                      className="d-inline-block align-top Footer-svg"
-                      alt="Facebook logo"
-                    />
-                  </Nav.Link>
-                  <Nav.Link href="#home">
-                    {' '}
-                    <img
-                      src={instaLogo}
-                      width="28"
-                      height="28"
-                      className="d-inline-block align-top"
-                      alt="Instagram logo"
-                    />
-                  </Nav.Link>
-                  <Nav.Link href="#home">
-                    {' '}
-                    <img
-                      src={linkedinLogo}
-                      width="28"
-                      height="28"
-                      className="d-inline-block align-top"
-                      alt="Linked'In logo"
-                    />
-                  </Nav.Link>
-                  <Nav.Link href="#home">
-                    {' '}
-                    <img
-                      src={twitter_xLogo}
-                      width="28"
-                      height="28"
-                      className="d-inline-block align-top"
-                      alt="Twitter / X logo"
-                    />
-                  </Nav.Link>
-                </Nav>
-              </div>
-              <Button variant="secondary" size="sm">
-                Nous écrire
-              </Button>{' '}
-            </div>
+            <ContactButton />
+            <SocialMedia />
           </Col>
         </Row>
       </Container>
