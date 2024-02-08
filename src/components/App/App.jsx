@@ -1,17 +1,26 @@
-import './App.scss';
-import FormContact from '../ContactForm/ContactForm';
-import Login from '../Login/Login';
+import { Route, Routes } from 'react-router-dom';
+import FormContact from '../../pages/ContactForm/ContactForm';
+import Login from '../../pages/Login/Login';
 import AppHeader from '../AppHeader/AppHeader';
-import MainContainer from '../MainContainer/MainContainer';
+import MainContainer from '../../pages/MainContainer/MainContainer';
+import ExamplePage from '../../pages/ExamplePage/ExamplePage';
 import AppFooter from '../AppFooter/AppFooter';
+
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
       <AppHeader />
-      <MainContainer />
-      <FormContact />
-      <Login />
+
+      <Routes>
+        <Route path="/" element={<MainContainer />} />
+        <Route path="/contact" element={<FormContact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/example-page/:id" element={<ExamplePage />} />
+        <Route path="*" element={<div>404</div>} />
+      </Routes>
+
       <AppFooter />
     </div>
   );
