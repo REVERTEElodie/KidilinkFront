@@ -1,0 +1,18 @@
+.Photo {
+  background-color: white;
+  border-radius: 7px;
+  max-width: max-content;
+
+  &-comment{
+    border: 1px #ff7482 solid;
+    border-radius: 7px;
+    height: max-content;
+    padding: 15px 8px;
+    text-align: left;
+  }
+
+  &-area-comment{
+    border: 1px #ff7482 solid;
+    border-radius: 7px;
+  }
+}

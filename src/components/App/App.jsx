@@ -7,6 +7,7 @@ import ExamplePage from '../../pages/ExamplePage/ExamplePage';
 import AppFooter from '../AppFooter/AppFooter';
 
 import './App.scss';
+import Photo from '../../pages/Photo/Photo';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/example-page/:id" element={<ExamplePage />} />
         <Route path="*" element={<div>404</div>} />
+        <Route path="/photo" element={<Photo />} />
       </Routes>
 
       <AppFooter />
