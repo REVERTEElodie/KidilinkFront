@@ -5,21 +5,27 @@ import AppHeader from '../AppHeader/AppHeader';
 import ExamplePage from '../../pages/ExamplePage/ExamplePage';
 import AppFooter from '../AppFooter/AppFooter';
 import Home from '../../pages/Home/Home';
+import Photo from '../../pages/Photo/Photo';
+import GraphicalCharter from '../../pages/GraphicalCharter/GraphicalCharter';
 
 import './App.scss';
-import GraphicalCharter from '../../pages/GraphicalCharter/GraphicalCharter';
 
 function App() {
   return (
     <div className="App">
       <AppHeader />
 
+      {/* <-- Début des routes --> */}
       <Routes>
         {/* <-- Common routes --> */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<div>page : A propos</div>} />
         <Route path="/contact" element={<FormContact />} />
         <Route path="/login" element={<Login />} />
+        <Route
+          path="/legal-notice"
+          element={<div>page : Mentions légales</div>}
+        />
 
         {/* <-- Users routes --> */}
         <Route
@@ -60,10 +66,7 @@ function App() {
           path="/photos"
           element={<div>page : Liste des photos d un album</div>}
         />
-        <Route
-          path="/photo/:id"
-          element={<div>page : Une photo avec commentaire (format blog)</div>}
-        />
+        <Route path="/photo/:id" element={<Photo />} />
 
         {/* <-- Devs routes delete before prod --> */}
         <Route path="/graphical-charter" element={<GraphicalCharter />} />
@@ -72,6 +75,7 @@ function App() {
         {/* <-- Errors routes --> */}
         <Route path="*" element={<div>404</div>} />
       </Routes>
+      {/* <-- Fin des routes --> */}
 
       <AppFooter />
     </div>
