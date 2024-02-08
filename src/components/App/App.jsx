@@ -9,6 +9,7 @@ import Photo from '../../pages/Photo/Photo';
 import GraphicalCharter from '../../pages/GraphicalCharter/GraphicalCharter';
 
 import './App.scss';
+import About from '../../pages/About/About';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <Routes>
         {/* <-- Common routes --> */}
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<div>page : A propos</div>} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<FormContact />} />
         <Route path="/login" element={<Login />} />
         <Route

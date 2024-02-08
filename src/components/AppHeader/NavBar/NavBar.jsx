@@ -7,10 +7,10 @@ const NavBar = () => {
     <Navbar className="justify-content-center">
       <Nav>
         <Nav.Item>
-          <Nav.Link href="#aPropos">A propos</Nav.Link>
+          <Nav.Link href="/about">A propos</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav.Link href="/contact">Contact</Nav.Link>
         </Nav.Item>
       </Nav>
     </Navbar>
