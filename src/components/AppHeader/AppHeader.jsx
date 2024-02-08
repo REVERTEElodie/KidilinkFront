@@ -1,18 +1,10 @@
-import {
-  Row,
-  Col,
-  Nav,
-  InputGroup,
-  Button,
-  Form,
-  Navbar,
-  Container,
-} from 'react-bootstrap';
-
-import { Search } from 'react-bootstrap-icons';
-import logo from '../../assets/kidiLink_logo_without_background.png';
+import { Row, Col, Container } from 'react-bootstrap';
 
 import './AppHeader.scss';
+import BrandLogo from './BrandLogo/BrandLogo';
+import SearchBar from './SearchBar/SearchBar';
+import NavBar from './NavBar/NavBar';
+import LoginButton from './LoginButton/LoginButton';
 
 const AppHeader = () => {
   return (
@@ -20,49 +12,16 @@ const AppHeader = () => {
       <Container sticky="top" className="p-2" fluid>
         <Row>
           <Col md={12} lg={3}>
-            <Navbar.Brand href="#home">
-              <img
-                src={logo}
-                width="60"
-                height="60"
-                className="d-inline-block align-top"
-                alt="Kidi' Link logo"
-              />
-            </Navbar.Brand>
+            <BrandLogo />
           </Col>
-
           <Col md={12} lg={3}>
-            <Navbar>
-              <InputGroup className="mb-3">
-                <Form.Control
-                  placeholder="Rechercher ..."
-                  aria-label="Rechercher"
-                  aria-describedby="basic-addon2"
-                />
-                <Button variant="outline-secondary" id="button-addon2">
-                  <Search />
-                </Button>
-              </InputGroup>
-            </Navbar>
+            <SearchBar />
           </Col>
-
           <Col md={12} lg={3}>
-            <Navbar className="justify-content-center">
-              <Nav>
-                <Nav.Item>
-                  <Nav.Link href="#aPropos">A propos</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link href="#contact">Contact</Nav.Link>
-                </Nav.Item>
-              </Nav>
-            </Navbar>
+            <NavBar />
           </Col>
-
           <Col className="p-2" md={12} lg={3}>
-            <Button variant="secondary" size="sm">
-              Connexion
-            </Button>{' '}
+            <LoginButton />
           </Col>
         </Row>
       </Container>
