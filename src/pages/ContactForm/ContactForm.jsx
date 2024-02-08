@@ -6,7 +6,7 @@ import './ContactForm.scss';
 const FormContact = () => {
   return (
     <>
-      <h2 className="mb-3 mt-3">Formulaire de contact</h2>
+      <h2>Formulaire de contact</h2>
       <div className="Contact">
         <Form>
           <Row>
