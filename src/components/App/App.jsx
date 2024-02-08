@@ -5,9 +5,10 @@ import AppHeader from '../AppHeader/AppHeader';
 import ExamplePage from '../../pages/ExamplePage/ExamplePage';
 import AppFooter from '../AppFooter/AppFooter';
 import Home from '../../pages/Home/Home';
+import Photo from '../../pages/Photo/Photo';
+import GraphicalCharter from '../../pages/GraphicalCharter/GraphicalCharter';
 
 import './App.scss';
-import GraphicalCharter from '../../pages/GraphicalCharter/GraphicalCharter';
 
 function App() {
   return (
@@ -71,6 +72,7 @@ function App() {
 
         {/* <-- Errors routes --> */}
         <Route path="*" element={<div>404</div>} />
+        <Route path="/photo" element={<Photo />} />
       </Routes>
 
       <AppFooter />
