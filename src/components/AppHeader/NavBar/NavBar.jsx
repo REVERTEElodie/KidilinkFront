@@ -1,4 +1,5 @@
 import { Navbar, Nav } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 import './NavBar.scss';
 
@@ -7,10 +8,14 @@ const NavBar = () => {
     <Navbar className="justify-content-center">
       <Nav>
         <Nav.Item>
-          <Nav.Link href="/about">A propos</Nav.Link>
+          <NavLink className="NavLink" to="/about">
+            A propos
+          </NavLink>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/contact">Contact</Nav.Link>
+          <NavLink className="NavLink" to="/contact">
+            Contact
+          </NavLink>
         </Nav.Item>
       </Nav>
     </Navbar>
