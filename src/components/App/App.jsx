@@ -10,6 +10,7 @@ import GraphicalCharter from '../../pages/GraphicalCharter/GraphicalCharter';
 
 import './App.scss';
 import About from '../../pages/About/About';
+import Admin from '../../pages/Admin/Admin';
 
 function App() {
   return (
@@ -29,10 +30,7 @@ function App() {
         />
 
         {/* <-- Users routes --> */}
-        <Route
-          path="/admin/users"
-          element={<div>page : Administration des utilisateurs</div>}
-        />
+        <Route path="/admin/users" element={<Admin />} />
         <Route
           path="/user-profil"
           element={<div>page : Profil de l utilisateur</div>}
