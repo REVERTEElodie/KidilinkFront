@@ -9,7 +9,7 @@ import LoginButton from './LoginButton/LoginButton';
 const AppHeader = () => {
   return (
     <header className="Header">
-      <Container sticky="top" className="p-2" fluid>
+      <Container sticky="top" className="m-2" fluid>
         <Row>
           <Col md={12} lg={3}>
             <BrandLogo />
