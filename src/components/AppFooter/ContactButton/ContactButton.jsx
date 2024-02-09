@@ -1,12 +1,17 @@
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import './ContactButton.scss';
 
 const ContactButton = () => {
   return (
-    <Button href="/contact" variant="secondary" size="sm">
-      Nous écrire
-    </Button>
+    <div>
+      <Link to="/contact">
+        <Button variant="secondary" size="sm">
+          Nous écrire
+        </Button>
+      </Link>
+    </div>
   );
 };
 
