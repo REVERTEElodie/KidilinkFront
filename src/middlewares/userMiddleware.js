@@ -1,17 +1,24 @@
 import axios from 'axios';
-import { SUBMIT_LOGIN, handleSuccessfulLogin } from '../actions/user';
+
+import {
+  CHANGE_LOGIN_FIELD,
+  SUBMIT_LOGIN,
+  handleSuccessfulLogin,
+} from '../actions/user';
 
 const userMiddleware = (store) => (next) => (action) => {
   // console.log('on a intercepté une action dans le middleware: ', action);
 
   switch (action.type) {
     case SUBMIT_LOGIN:
-      // console.log(store.getState().email);
+      console.log(store.getState().user.email);
+      console.log(store.getState().user.password);
+
       // => undefined, on a oublié le nom du tiroir
       axios
         .post(
           // URL
-          'http://localhost:3001/login',
+          'http://localhost:3001/login_check',
           // données => on peut les visualiser dans l'onglet Network du dev tool,
           // en cliquant sur la requête, et en regardant l'onglet payload
           {
@@ -53,7 +60,6 @@ const userMiddleware = (store) => (next) => (action) => {
         .catch((error) => {
           console.log(error);
         });
-
       break;
 
     default:
