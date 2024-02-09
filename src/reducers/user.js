@@ -7,8 +7,10 @@ export const initialState = {
   email: '',
   // contenu du champ password du formulaire de login
   password: '',
-  // pseudo de l'utilisateur (quand il est authentifié)
-  nickname: '',
+  // prénom de l'utilisateur (quand il est authentifié)
+  firstname: '',
+   // nom de l'utilisateur (quand il est authentifié)
+  lastname: '',
   // token JWT
   token: '',
 };

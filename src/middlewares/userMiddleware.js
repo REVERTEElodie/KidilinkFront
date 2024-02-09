@@ -1,5 +1,10 @@
 import axios from 'axios';
-import { SUBMIT_LOGIN, handleSuccessfulLogin } from '../actions/user';
+
+import {
+  CHANGE_LOGIN_FIELD,
+  SUBMIT_LOGIN,
+  handleSuccessfulLogin,
+} from '../actions/user';
 
 const userMiddleware = (store) => (next) => (action) => {
   // console.log('on a intercepté une action dans le middleware: ', action);
@@ -53,7 +58,6 @@ const userMiddleware = (store) => (next) => (action) => {
         .catch((error) => {
           console.log(error);
         });
-
       break;
 
     default:
