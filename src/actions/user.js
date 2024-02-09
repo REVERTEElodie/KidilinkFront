@@ -4,9 +4,9 @@ export const SUBMIT_LOGIN = 'SUBMIT_LOGIN';
 export const HANDLE_SUCCESSFUL_LOGIN = 'HANDLE_SUCCESSFUL_LOGIN';
 
 // Control of the component Login
-export const changeLoginField = (newValue, identifier) => ({
+export const changeLoginField = (value, identifier) => ({
   type: CHANGE_LOGIN_FIELD,
-  value: newValue,
+  value,
   identifier,
 });
 
