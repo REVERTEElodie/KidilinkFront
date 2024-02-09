@@ -1,4 +1,3 @@
-import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import logo from '../../../assets/kidiLink_logo_without_background.png';
