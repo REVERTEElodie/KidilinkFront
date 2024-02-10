@@ -1,13 +1,11 @@
 import { Navbar, InputGroup, Form, Button } from 'react-bootstrap';
 import { Search } from 'react-bootstrap-icons';
 
-import './SearchBar.scss';
-
 const SearchBar = () => {
   return (
     <div className="ColDiv">
       <Navbar>
-        <InputGroup className="mb-3">
+        <InputGroup className="mb-2">
           <Form.Control
             placeholder="Rechercher ..."
             aria-label="Rechercher"
