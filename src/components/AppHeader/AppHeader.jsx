@@ -14,10 +14,10 @@ const AppHeader = () => {
           <Col md={12} lg={3}>
             <BrandLogo />
           </Col>
-          <Col md={12} lg={3}>
+          <Col md={12} lg={2}>
             <SearchBar />
           </Col>
-          <Col md={12} lg={3}>
+          <Col md={12} lg={4}>
             <NavBar />
           </Col>
           <Col className="p-2" md={12} lg={3}>

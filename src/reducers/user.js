@@ -7,6 +7,10 @@ export const initialState = {
   email: '',
   // contenu du champ password du formulaire de login
   password: '',
+  // prénom de l'utilisateur (quand il est authentifié)
+  firstname: '',
+  // token JWT
+  token: '',
 };
 
 /* reducer qui s'occupe de ce qui concerne l'utilisateur */

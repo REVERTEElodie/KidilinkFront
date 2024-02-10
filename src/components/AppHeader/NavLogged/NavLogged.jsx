@@ -1,0 +1,97 @@
+import { Navbar, Dropdown, NavItem, NavLink, Nav } from 'react-bootstrap';
+import {
+  People,
+  Folder2Open,
+  Diagram3,
+  Pencil,
+  Plus,
+  FolderMinus,
+  Images,
+} from 'react-bootstrap-icons';
+
+import './Navlogged.scss';
+
+const NavLogged = () => {
+  return (
+    <div className="Navlogged">
+      <div>
+        <Navbar>
+          <Nav.Link href="#home">
+            <Images title="Fil d'actualité" className="fs-2" />
+          </Nav.Link>
+        </Navbar>
+      </div>
+
+      <div>
+        <Navbar>
+          <Dropdown as={NavItem}>
+            <Dropdown.Toggle as={NavLink}>
+              <People title="Gérer les encadrants" className="fs-2" />
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item>
+                <Plus /> Ajouter un album
+              </Dropdown.Item>
+              <Dropdown.Divider />
+              <Dropdown.Item>
+                <Pencil /> Modifier un album
+              </Dropdown.Item>
+              <Dropdown.Divider />
+              <Dropdown.Item>
+                <FolderMinus /> Supprimer un album
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Navbar>
+      </div>
+
+      <div>
+        <Navbar>
+          <Dropdown as={NavItem}>
+            <Dropdown.Toggle as={NavLink}>
+              <Folder2Open title="Gérer les albums" className="fs-2" />
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item>
+                <Plus /> Ajouter un album
+              </Dropdown.Item>
+              <Dropdown.Divider />
+              <Dropdown.Item>
+                <Pencil /> Modifier un album
+              </Dropdown.Item>
+              <Dropdown.Divider />
+              <Dropdown.Item>
+                <FolderMinus /> Supprimer un album
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Navbar>
+      </div>
+
+      <div>
+        <Navbar>
+          <Dropdown as={NavItem}>
+            <Dropdown.Toggle as={NavLink}>
+              <Diagram3 title="Gérer les classes" className="fs-2" />
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item>
+                <Plus /> Ajouter un album
+              </Dropdown.Item>
+              <Dropdown.Divider />
+              <Dropdown.Item>
+                <Pencil /> Modifier un album
+              </Dropdown.Item>
+              <Dropdown.Divider />
+              <Dropdown.Item>
+                <FolderMinus /> Supprimer un album
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Navbar>
+      </div>
+    </div>
+  );
+};
+
+export default NavLogged;
