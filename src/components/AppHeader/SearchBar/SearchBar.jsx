@@ -3,7 +3,7 @@ import { Search } from 'react-bootstrap-icons';
 
 const SearchBar = () => {
   return (
-    <div className="ColDiv">
+    <div>
       <Navbar>
         <InputGroup className="mb-2">
           <Form.Control
