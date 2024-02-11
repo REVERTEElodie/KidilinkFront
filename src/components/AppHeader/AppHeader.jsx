@@ -7,6 +7,7 @@ import NavBar from './NavBar/NavBar';
 import LoginButton from './LoginButton/LoginButton';
 
 const AppHeader = () => {
+
   return (
     <header className="Header">
       <Container sticky="top" className="m-2" fluid>
