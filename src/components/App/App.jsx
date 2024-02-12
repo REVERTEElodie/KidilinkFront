@@ -12,6 +12,7 @@ import Admin from '../../pages/Admin/Admin';
 import GraphicalCharter from '../../pages/GraphicalCharter/GraphicalCharter';
 
 import './App.scss';
+import AddUserForm from '../../pages/AddUserForm/AddUserForm';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
 
         {/* <-- Users routes --> */}
         <Route path="/admin/users" element={<Admin />} />
+        <Route path="/admin/user" element={<AddUserForm />} />
         <Route
           path="/user-profil"
           element={<div>page : Profil de l utilisateur</div>}
