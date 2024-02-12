@@ -1,0 +1,40 @@
+@use '../../styles/variables';
+
+.UserList {
+  &-section {
+    display: flex;
+    border-bottom: 2px solid variables.$primary;
+    width: 90vw;
+    margin: 50px;
+    padding: 10px;
+  }
+
+  &-teachers {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid variables.$success;
+    padding-bottom: 8px;
+    text-align: left;
+    margin-bottom: 10px;
+
+    &-list {
+      width: 85px;
+
+      &-item {
+        display: inline-block;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  &-class {
+    display: block;
+    width: 100%;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+}

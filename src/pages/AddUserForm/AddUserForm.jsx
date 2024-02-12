@@ -6,6 +6,7 @@ import { Col, Form, Row, Button } from 'react-bootstrap';
 import { changeUserField, submitUserForm } from '../../actions/addUserForm';
 
 import './AddUserForm.scss';
+import UserList from '../../components/UserList/UserList';
 
 const AddUserForm = () => {
   const firstName = useSelector((state) => state.firstName);
@@ -27,7 +28,7 @@ const AddUserForm = () => {
 
   return (
     <>
-      <h2>Ajout d'un utilisateur</h2>
+      <h2 className="m-5">Ajout d'un utilisateur</h2>
       <div className="Contact">
         <Form onSubmit={onSubmit}>
           <Row>
@@ -92,6 +93,8 @@ const AddUserForm = () => {
           </Form.Group>
         </Form>
       </div>
+
+      <UserList />
     </>
   );
 };
