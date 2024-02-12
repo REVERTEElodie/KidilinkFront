@@ -30,15 +30,15 @@ const NavLogged = () => {
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item>
-                <Plus /> Ajouter un album
+                <Plus /> Ajouter un encadrant
               </Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item>
-                <Pencil /> Modifier un album
+                <Pencil /> Modifier un encadrant
               </Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item>
-                <FolderMinus /> Supprimer un album
+                <FolderMinus /> Supprimer un encadrant
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
@@ -76,15 +76,15 @@ const NavLogged = () => {
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item>
-                <Plus /> Ajouter un album
+                <Plus /> Ajouter une classe
               </Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item>
-                <Pencil /> Modifier un album
+                <Pencil /> Modifier un classe
               </Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item>
-                <FolderMinus /> Supprimer un album
+                <FolderMinus /> Supprimer un classe
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

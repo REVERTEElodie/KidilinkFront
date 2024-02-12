@@ -43,6 +43,14 @@ const FormContact = () => {
               </Form.Select>
             </Col>
           </Row>
+          <Row>
+            <Col>
+              <Form.Group className="mb-3" controlId="contactForm.message">
+                <Form.Label>Votre message</Form.Label>
+                <Form.Control as="textarea" rows={3} />
+              </Form.Group>
+            </Col>
+          </Row>
           <Form.Group className="mb-3 mt-3" controlId="contactForm.submit">
             <Button type="submit" variant="secondary">
               Envoyer

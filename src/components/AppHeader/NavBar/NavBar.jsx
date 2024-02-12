@@ -7,7 +7,6 @@ import NavLogged from '../NavLogged/NavLogged';
 
 const NavBar = () => {
   const logged = useSelector((state) => state.user.logged);
-  console.log(logged);
 
   return (
     <div>
