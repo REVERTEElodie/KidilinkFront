@@ -9,6 +9,8 @@ import {
   Button,
 } from 'react-bootstrap';
 
+import { Link } from 'react-router-dom';
+
 import Robin from '../../assets/avatars/avatar-robin-developpeur-web-react-php.png';
 import Louis from '../../assets/avatars/avatar-louis-developpeur-web-php.png';
 import Elodie from '../../assets/avatars/avatar-elodie-developpeur-web-php.png';
@@ -19,7 +21,7 @@ const About = () => {
     <div>
       <h1 className="m-5">A propos de nous</h1>
       <Container className="mb-5">
-        <h2 className="mb-3">La team</h2>
+        <h2>La team</h2>
         <Row>
           <Col md={12} lg={3} className="mt-3 mb-3">
             <Card>
@@ -95,9 +97,9 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-      <h2 className="mb-5">le projet</h2>
-      <Container>
-        <p className="fs-4 fw-light lh-base mb-5">
+      <h2>Le projet</h2>
+      <Container className="mb-5">
+        <p>
           Permettre aux établissements accueillant des enfants et aux parents de
           communiquer, créer du lien et partager du contenu. Un goûter
           d'anniversaire, une sortie scolaire, des créations hautement
@@ -111,11 +113,11 @@ const About = () => {
           informés et voir l'évolution de leurs jeunes bambins. Chaque école
           voulant utiliser la solution, aura son espace dédié.
         </p>
-      </Container>
-      <Container fluid className="m-5">
-        <Button href="/contact" variant="secondary" size="l">
-          Nous faire coucou
-        </Button>
+        <Link to="/contact">
+          <Button variant="secondary" size="l">
+            Nous faire coucou
+          </Button>
+        </Link>
       </Container>
     </div>
   );
