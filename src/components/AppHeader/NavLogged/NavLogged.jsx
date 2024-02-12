@@ -8,6 +8,7 @@ import {
   FolderMinus,
   Images,
 } from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
 
 import './Navlogged.scss';
 
@@ -30,7 +31,9 @@ const NavLogged = () => {
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item>
-                <Plus /> Ajouter un encadrant
+                <Link to="/admin/user">
+                  <Plus /> Ajouter un encadrant
+                </Link>
               </Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item>
