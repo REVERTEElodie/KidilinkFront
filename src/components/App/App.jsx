@@ -13,6 +13,7 @@ import GraphicalCharter from '../../pages/GraphicalCharter/GraphicalCharter';
 
 import './App.scss';
 import UserForm from '../../pages/UserForm/UserForm';
+import ClasseForm from '../../pages/ClasseForm/ClasseForm';
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
         {/* <-- Classes routes --> */}
         <Route
           path="/admin/classes"
-          element={<div>page : Administration des classes</div>}
+          element={<ClasseForm />}
         />
         <Route path="/classes" element={<div>page : Liste des classes</div>} />
         <Route path="/classe/:id" element={<div>page : Une classe</div>} />

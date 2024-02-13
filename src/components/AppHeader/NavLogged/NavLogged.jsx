@@ -80,7 +80,9 @@ const NavLogged = () => {
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item>
-                <Plus /> Ajouter une classe
+                <Link to="/admin/classes">
+                  <Plus /> Ajouter une classe
+                </Link>
               </Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item>
