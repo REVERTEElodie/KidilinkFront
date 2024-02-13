@@ -22,6 +22,17 @@ const reducer = (state = initialState, action = {}) => {
         [action.identifier]: action.value,
       };
 
+    case HANDLE_SUCCESSFUL_LOGIN:
+      return {
+        ...state,
+        logged: true,
+        firstname: action.firstname,
+        token: action.token,
+        // sécurité : on efface les identifiants du state dès qu'on a plus besoin
+        email: '',
+        password: '',
+      };
+
     default:
       return state;
   }
