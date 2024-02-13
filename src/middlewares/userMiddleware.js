@@ -18,7 +18,7 @@ const userMiddleware = (store) => (next) => (action) => {
       axios
         .post(
           // URL
-          'http://localhost:3001/login_check',
+          'http://127.0.0.1:8000/api/login',
           // données => on peut les visualiser dans l'onglet Network du dev tool,
           // en cliquant sur la requête, et en regardant l'onglet payload
           {

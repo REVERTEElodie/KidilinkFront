@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+
 import FormContact from '../../pages/ContactForm/ContactForm';
 import Login from '../../pages/Login/Login';
 import AppHeader from '../AppHeader/AppHeader';
@@ -10,10 +11,11 @@ import LegalNotice from '../../pages/LegalNotice/LegalNotice';
 import About from '../../pages/About/About';
 import Admin from '../../pages/Admin/Admin';
 import GraphicalCharter from '../../pages/GraphicalCharter/GraphicalCharter';
-
-import './App.scss';
 import UserForm from '../../pages/UserForm/UserForm';
 import ClasseForm from '../../pages/ClasseForm/ClasseForm';
+import AlbumForm from '../../pages/AlbumForm/AlbumForm';
+
+import './App.scss';
 
 function App() {
   return (
@@ -42,18 +44,12 @@ function App() {
         />
 
         {/* <-- Classes routes --> */}
-        <Route
-          path="/admin/classes"
-          element={<ClasseForm />}
-        />
+        <Route path="/admin/classes" element={<ClasseForm />} />
         <Route path="/classes" element={<div>page : Liste des classes</div>} />
         <Route path="/classe/:id" element={<div>page : Une classe</div>} />
 
         {/* <-- Albums routes --> */}
-        <Route
-          path="/admin/albums"
-          element={<div>page : Administration des albums</div>}
-        />
+        <Route path="/admin/albums" element={<AlbumForm />} />
         <Route path="/albums" element={<div>page : Liste des albums</div>} />
         <Route path="/album/:id" element={<div>page : Un album</div>} />
 
