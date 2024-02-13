@@ -11,12 +11,12 @@ const userMiddleware = (store) => (next) => (action) => {
 
   switch (action.type) {
     case SUBMIT_LOGIN:
-      console.log(store.getState().user.email);
-      console.log(store.getState().user.password);
+      // console.log(store.getState().user.email);
+      // console.log(store.getState().user.password);
 
       // => undefined, on a oublié le nom du tiroir
       axios
-        .post(
+        .get(
           // URL
           'http://127.0.0.1:8000/api/login',
           // données => on peut les visualiser dans l'onglet Network du dev tool,
