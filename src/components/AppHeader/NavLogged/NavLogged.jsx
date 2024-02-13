@@ -28,21 +28,21 @@ const NavLogged = () => {
         <Navbar>
           <Dropdown as={NavItem}>
             <Dropdown.Toggle as={NavLink}>
-              <People title="Gérer les encadrants" className="fs-2" />
+              <People title="Gérer les utilisateurs" className="fs-2" />
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item>
                 <Link to="/admin/user">
-                  <Plus /> Ajouter un encadrant
+                  <Plus /> Ajouter un utilisateur
                 </Link>
               </Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item>
-                <Pencil /> Modifier un encadrant
+                <Pencil /> Modifier un utilisateur
               </Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item>
-                <FolderMinus /> Supprimer un encadrant
+                <FolderMinus /> Supprimer un utilisateur
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

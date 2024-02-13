@@ -1,4 +1,4 @@
-import { CHANGE_USER_FIELD } from '../actions/addUserForm';
+import { CHANGE_USER_FIELD } from '../actions/UserForm';
 
 export const initialState = {
   // prénom de l'utilisateur
@@ -7,6 +7,8 @@ export const initialState = {
   lastName: '',
   // email de l'utilisateur
   email: '',
+  // mot de passe de l'utilisateur
+  password: '',
   // role de l'utilisateur
   userRole: '',
 };
