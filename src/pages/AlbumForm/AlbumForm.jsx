@@ -3,40 +3,40 @@ import { useSelector, useDispatch } from 'react-redux';
 /* eslint-disable react/no-unescaped-entities */
 import { Col, Form, Row, Button } from 'react-bootstrap';
 
-import { changeClasseField, submitClasseForm } from '../../actions/ClasseForm';
+import { changeAlbumField, submitAlbumForm } from '../../actions/AlbumForm';
 
-import './ClasseForm.scss';
+import './AlbumForm.scss';
 
-const ClasseForm = () => {
-  const classeNameValue = useSelector((state) => state.classeName);
-  const sessionOfValue = useSelector((state) => state.sessionOf);
+const AlbumForm = () => {
+  const albumNameValue = useSelector((state) => state.albumName);
+  const descriptionValue = useSelector((state) => state.description);
   const dispatch = useDispatch();
 
   const onFieldChange = (event) => {
-    const action = changeClasseField(event.target.value, event.target.name);
+    const action = changeAlbumField(event.target.value, event.target.name);
     dispatch(action);
   };
 
   const onSubmit = (event) => {
     event.preventDefault();
 
-    dispatch(submitClasseForm());
+    dispatch(submitAlbumForm());
   };
 
   return (
     <>
-      <h2>Ajout d'une classe</h2>
-      <div className="Classe">
+      <h2>Ajout d'un album</h2>
+      <div className="Album">
         <Form onSubmit={onSubmit}>
           <Row>
             <Col>
               <Form.Group className="mb-3" controlId="classeForm.classename">
-                <Form.Label>Nom de la classe</Form.Label>
+                <Form.Label>Nom de l'album</Form.Label>
                 <Form.Control
                   type="text"
-                  name="classeName"
+                  name="albumName"
                   placeholder="Identifiant de la classe"
-                  value={classeNameValue}
+                  value={albumNameValue}
                   onChange={onFieldChange}
                 />
               </Form.Group>
@@ -45,12 +45,12 @@ const ClasseForm = () => {
           <Row>
             <Col>
               <Form.Group className="mb-3" controlId="classeForm.sessionof">
-                <Form.Label>Session</Form.Label>
+                <Form.Label>Description</Form.Label>
                 <Form.Control
                   type="text"
-                  name="sessionOf"
-                  placeholder="Année scolaire"
-                  value={sessionOfValue}
+                  name="description"
+                  placeholder="Description de l'album"
+                  value={descriptionValue}
                   onChange={onFieldChange}
                 />
               </Form.Group>
@@ -68,4 +68,4 @@ const ClasseForm = () => {
   );
 };
 
-export default ClasseForm;
+export default AlbumForm;

@@ -57,7 +57,9 @@ const NavLogged = () => {
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item>
-                <Plus /> Ajouter un album
+                <Link to="/admin/albums">
+                  <Plus /> Ajouter un album
+                </Link>
               </Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item>
