@@ -2,6 +2,9 @@
 import { Row, Col, Container, Image } from 'react-bootstrap';
 import { PencilFill, Trash3, PlusCircle } from 'react-bootstrap-icons';
 
+import { Link } from 'react-router-dom';
+import UserList from '../../components/UserList/UserList';
+
 import './Admin.scss';
 
 const Admin = () => {
@@ -181,74 +184,13 @@ const Admin = () => {
 
       <Image src="https://picsum.photos/900/200" fluid className="my-5" />
 
-      <section>
-        <div className="Admin-section">
-          <h2>Les encadrants de votre établissement</h2>
-        </div>
-        <Container className="Admin-teachers">
-          <div className="Admin-teachers-list">
-            <h3>Valentine</h3>
-          </div>
-          <div className="Admin-teachers-list">
-            <h3>Robert</h3>
-          </div>
-          <div className="Admin-class-icon">
-            <div>
-              <a href="#">
-                <PencilFill />
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <Trash3 />
-              </a>
-            </div>
-          </div>
-        </Container>
-        <Container className="Admin-teachers">
-          <div>
-            <h3>Corentin</h3>
-          </div>
-          <div>
-            <h3>Pampers</h3>
-          </div>
-          <div className="Admin-class-icon">
-            <div>
-              <a href="#">
-                <PencilFill />
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <Trash3 />
-              </a>
-            </div>
-          </div>
-        </Container>
-        <Container className="Admin-teachers">
-          <div>
-            <h3>Géraldine</h3>
-          </div>
-          <div>
-            <h3>Kamoulox</h3>
-          </div>
-          <div className="Admin-class-icon">
-            <div>
-              <a href="#">
-                <PencilFill />
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <Trash3 />
-              </a>
-            </div>
-          </div>
-        </Container>
-        <div>
+      <UserList />
+
+      <div>
+        <Link to="/admin/user">
           <PlusCircle className="fs-1 m-5" />
-        </div>
-      </section>
+        </Link>
+      </div>
     </>
   );
 };

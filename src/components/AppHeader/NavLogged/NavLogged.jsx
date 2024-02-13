@@ -7,6 +7,7 @@ import {
   Plus,
   FolderMinus,
   Images,
+  House,
 } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
 
@@ -91,6 +92,13 @@ const NavLogged = () => {
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
+        </Navbar>
+      </div>
+      <div>
+        <Navbar>
+          <Link to="/admin/users">
+            <House title="Accueil" className="fs-2" />
+          </Link>
         </Navbar>
       </div>
     </div>
