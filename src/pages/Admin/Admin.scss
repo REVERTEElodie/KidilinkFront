@@ -40,20 +40,8 @@
 
     &-icon {
       display: flex;
+      align-items: center;
       gap: 15px;
-    }
-  }
-
-  &-teachers {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid variables.$success;
-    padding-bottom: 8px;
-    text-align: left;
-    margin-bottom: 20px;
-
-    &-list {
-      width: 85px;
     }
   }
 }

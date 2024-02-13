@@ -6,6 +6,7 @@ import { Col, Form, Row, Button, InputGroup } from 'react-bootstrap';
 import { changeUserField, submitUserForm } from '../../actions/UserForm';
 
 import './UserForm.scss';
+import UserList from '../../components/UserList/UserList';
 
 const UserForm = () => {
   const firstNameValue = useSelector((state) => state.firstName);
@@ -110,6 +111,8 @@ const UserForm = () => {
           </Form.Group>
         </Form>
       </div>
+
+      <UserList />
     </>
   );
 };
