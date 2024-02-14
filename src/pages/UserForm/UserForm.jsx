@@ -44,7 +44,7 @@ const UserForm = () => {
                   <option>...</option>
                   <option>Parent-e</option>
                   <option>Encadrant-e</option>
-                  <option>Directeir-trice</option>
+                  <option>Directeur-trice</option>
                 </Form.Select>
               </Form.Group>
             </Col>
