@@ -2,7 +2,7 @@ import { CHANGE_LOGIN_FIELD, HANDLE_SUCCESSFUL_LOGIN } from '../actions/user';
 
 export const initialState = {
   // indique si l'utilisateur est authentifié
-  logged: true,
+  logged: false,
   // contenu du champ email du formulaire de login
   email: '',
   // contenu du champ password du formulaire de login
