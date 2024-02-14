@@ -16,7 +16,14 @@ const userMiddleware = (store) => (next) => (action) => {
         )
         .then((response) => {
           // Recover and save the token on the state
-          store.dispatch(handleSuccessfulLogin(response.data.token));
+          store.dispatch(
+            handleSuccessfulLogin(
+              response.data.data.firstname,
+              response.data.token
+            )
+          );
+
+          localStorage.setItem('jwtoken', response.data.token);
           console.log(response.data.token);
         })
         .catch((error) => {
