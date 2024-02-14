@@ -1,14 +1,14 @@
-import axios from 'axios';
+import api from '../api';
 
 import { SUBMIT_LOGIN, handleSuccessfulLogin } from '../actions/user';
 
 const userMiddleware = (store) => (next) => (action) => {
   switch (action.type) {
     case SUBMIT_LOGIN:
-      axios
+      api
         .post(
           // Send data connexion to the server
-          'http://127.0.0.1:8000/api/login_check',
+          '/login_check',
           {
             username: store.getState().user.email,
             password: store.getState().user.password,
