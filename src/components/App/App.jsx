@@ -16,6 +16,7 @@ import ClasseForm from '../../pages/ClasseForm/ClasseForm';
 import AlbumForm from '../../pages/AlbumForm/AlbumForm';
 
 import './App.scss';
+import PopUp from '../AddPopUp/AddPopUp';
 
 function App() {
   return (

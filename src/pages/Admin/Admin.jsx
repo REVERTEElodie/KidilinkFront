@@ -1,15 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Row, Col, Container, Image } from 'react-bootstrap';
+import { Row, Col, Container, Button } from 'react-bootstrap';
 import { PencilFill, Trash3, PlusCircle } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
 
 import Lottie from 'react-lottie';
 import anim1 from '../../components/Lotties/anim1.json';
-import animTab from '../../components/Lotties/animTab.json';
 
 import UserList from '../../components/UserList/UserList';
 
 import './Admin.scss';
+import AddPopUp from '../../components/AddPopUp/AddPopUp';
 
 const Admin = () => {
   // Set the Lottie File
@@ -30,7 +30,6 @@ const Admin = () => {
         <div className="Admin-Hero">
           <Lottie options={LottieAnim1} height={400} width={500} />
         </div>
-
         <div className="Admin-section">
           <h2>Les classes de votre établissement</h2>
         </div>
@@ -174,9 +173,7 @@ const Admin = () => {
             </Col>
           </Row>
         </Container>
-        <div>
-          <PlusCircle className="fs-1 m-5" />
-        </div>
+        <AddPopUp />
       </section>
 
       <UserList />
