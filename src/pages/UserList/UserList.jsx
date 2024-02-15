@@ -8,7 +8,7 @@ const UserList = () => {
   return (
     <section className="m-5">
       <div className="UserList-section">
-        <h2>Les encadrants de votre établissement</h2>
+        <h3>Les encadrants de votre établissement</h3>
       </div>
       <Container className="UserList-teachers">
         <div className="UserList-teachers-list">
@@ -17,8 +17,26 @@ const UserList = () => {
         <div className="UserList-teachers-list">
           <p className="UserList-teachers-list-item">Nom</p>
         </div>
+        <div className="UserList-class-icon">
+          <div>
+            <a href="#">
+              <PencilFill />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <Trash3 />
+            </a>
+          </div>
+        </div>
+      </Container>
+
+      <Container className="UserList-teachers">
         <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Rôle</p>
+          <p className="UserList-teachers-list-item">Prénom</p>
+        </div>
+        <div className="UserList-teachers-list">
+          <p className="UserList-teachers-list-item">Nom</p>
         </div>
         <div className="UserList-class-icon">
           <div>
@@ -41,8 +59,26 @@ const UserList = () => {
         <div className="UserList-teachers-list">
           <p className="UserList-teachers-list-item">Nom</p>
         </div>
+        <div className="UserList-class-icon">
+          <div>
+            <a href="#">
+              <PencilFill />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <Trash3 />
+            </a>
+          </div>
+        </div>
+      </Container>
+
+      <Container className="UserList-teachers">
         <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Rôle</p>
+          <p className="UserList-teachers-list-item">Prénom</p>
+        </div>
+        <div className="UserList-teachers-list">
+          <p className="UserList-teachers-list-item">Nom</p>
         </div>
         <div className="UserList-class-icon">
           <div>
@@ -65,8 +101,26 @@ const UserList = () => {
         <div className="UserList-teachers-list">
           <p className="UserList-teachers-list-item">Nom</p>
         </div>
+        <div className="UserList-class-icon">
+          <div>
+            <a href="#">
+              <PencilFill />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <Trash3 />
+            </a>
+          </div>
+        </div>
+      </Container>
+
+      <Container className="UserList-teachers">
         <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Rôle</p>
+          <p className="UserList-teachers-list-item">Prénom</p>
+        </div>
+        <div className="UserList-teachers-list">
+          <p className="UserList-teachers-list-item">Nom</p>
         </div>
         <div className="UserList-class-icon">
           <div>
@@ -89,9 +143,6 @@ const UserList = () => {
         <div className="UserList-teachers-list">
           <p className="UserList-teachers-list-item">Nom</p>
         </div>
-        <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Rôle</p>
-        </div>
         <div className="UserList-class-icon">
           <div>
             <a href="#">
@@ -112,81 +163,6 @@ const UserList = () => {
         </div>
         <div className="UserList-teachers-list">
           <p className="UserList-teachers-list-item">Nom</p>
-        </div>
-        <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Rôle</p>
-        </div>
-        <div className="UserList-class-icon">
-          <div>
-            <a href="#">
-              <PencilFill />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <Trash3 />
-            </a>
-          </div>
-        </div>
-      </Container>
-
-      <Container className="UserList-teachers">
-        <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Prénom</p>
-        </div>
-        <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Nom</p>
-        </div>
-        <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Rôle</p>
-        </div>
-        <div className="UserList-class-icon">
-          <div>
-            <a href="#">
-              <PencilFill />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <Trash3 />
-            </a>
-          </div>
-        </div>
-      </Container>
-
-      <Container className="UserList-teachers">
-        <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Prénom</p>
-        </div>
-        <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Nom</p>
-        </div>
-        <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Rôle</p>
-        </div>
-        <div className="UserList-class-icon">
-          <div>
-            <a href="#">
-              <PencilFill />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <Trash3 />
-            </a>
-          </div>
-        </div>
-      </Container>
-
-      <Container className="UserList-teachers">
-        <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Prénom</p>
-        </div>
-        <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Nom</p>
-        </div>
-        <div className="UserList-teachers-list">
-          <p className="UserList-teachers-list-item">Rôle</p>
         </div>
         <div className="UserList-class-icon">
           <div>
