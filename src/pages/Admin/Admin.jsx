@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Lottie from 'react-lottie';
 import anim1 from '../../components/Lotties/anim1.json';
 
-import UserList from '../../components/UserList/UserList';
+import UserList from '../UserList/UserList';
 
 import './Admin.scss';
 import AddPopUp from '../../components/AddPopUp/AddPopUp';
