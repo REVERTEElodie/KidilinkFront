@@ -1,14 +1,14 @@
-import axios from 'axios';
+import api from '../api';
 
 import { SUBMIT_USER_FORM } from '../actions/UserForm';
 
 const userMiddleware = (store) => (next) => (action) => {
   switch (action.type) {
     case SUBMIT_USER_FORM:
-      axios
+      api
         .post(
           // Send data connexion to the server
-          'http://127.0.0.1:8000/api/users/nouveau',
+          '/users/nouveau',
           {
             userRole: store.getState().UserForm.userRole,
             firstName: store.getState().UserForm.firstNameName,
