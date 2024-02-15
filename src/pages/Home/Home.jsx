@@ -7,11 +7,7 @@ const Home = () => {
     <main>
       <Container gap={5} className="col-md-8 mx-auto mt-5">
         <div>
-          <h1>
-            Bienvenue
-            <br />
-            sur Kidi&apos; Link
-          </h1>
+          <h1>Bienvenue sur ...</h1>
         </div>
         <div>
           <img

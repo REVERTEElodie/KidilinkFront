@@ -1,15 +1,14 @@
 import { Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 import './NavBar.scss';
 
 const NavBar = () => {
   return (
-    <Nav className="Footer-col">
-      <Link to="/">Accueil</Link>
-      <Link to="/about">A propos</Link>
-      <Link to="/legal-notice">Mentions légales</Link>
-      <Link to="/contact">Contact</Link>
+    <Nav className="flex-column">
+      <Nav.Link href="/">Accueil</Nav.Link>
+      <Nav.Link href="/about">A propos</Nav.Link>
+      <Nav.Link href="/legal-notice">Mentions légales</Nav.Link>
+      <Nav.Link href="/contact">Contact</Nav.Link>
     </Nav>
   );
 };
