@@ -1,0 +1,44 @@
+@use '../../styles/variables';
+
+.UserList {
+  &-section {
+    display: flex;
+    border-bottom: 2px solid variables.$primary;
+    // width: 90vw;
+    height: fit-content;
+    // margin: 1em;
+    // padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  &-teachers {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid variables.$success;
+    // padding-bottom: 1em;
+    text-align: left;
+    gap: 1em;
+
+    &-list {
+      width: fit-content;
+
+      &-item {
+        display: inline-block;
+        // font-size: 1.5em;
+      }
+    }
+  }
+
+  &-class {
+    display: block;
+    // width: 100%;
+
+    &-icon {
+      display: flex;
+      // flex-wrap: wrap;
+      align-items: center;
+      gap: 0.8em;
+    }
+  }
+}

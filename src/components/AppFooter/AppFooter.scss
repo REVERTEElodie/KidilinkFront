@@ -10,11 +10,12 @@
 	padding-top: 8px;
 
 	&-col{
+		height: 100%;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
-		gap: 10px;
+		margin: 0.5em;
 	}
 
 	&-svg{

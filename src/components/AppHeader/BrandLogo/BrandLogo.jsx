@@ -1,4 +1,4 @@
-import { Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import logo from '../../../assets/kidiLink_logo_without_background.png';
 
@@ -6,7 +6,7 @@ import './BrandLogo.scss';
 
 const BrandLogo = () => {
   return (
-    <Navbar.Brand href="#home">
+    <Link to="/">
       <img
         src={logo}
         width="60"
@@ -14,7 +14,7 @@ const BrandLogo = () => {
         className="d-inline-block align-top"
         alt="Kidi' Link logo"
       />
-    </Navbar.Brand>
+    </Link>
   );
 };
 

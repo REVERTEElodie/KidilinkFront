@@ -1,19 +1,34 @@
 import { Navbar, Nav } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import './NavBar.scss';
+import NavLogged from '../NavLogged/NavLogged';
 
 const NavBar = () => {
+  const logged = useSelector((state) => state.user.logged);
+
   return (
-    <Navbar className="justify-content-center">
-      <Nav>
-        <Nav.Item>
-          <Nav.Link href="#aPropos">A propos</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#contact">Contact</Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </Navbar>
+    <div>
+      {logged ? (
+        <NavLogged />
+      ) : (
+        <Navbar className="justify-content-center">
+          <Nav>
+            <Nav.Item>
+              <NavLink className="NavLink" to="/about">
+                A propos
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink className="NavLink" to="/contact">
+                Contact
+              </NavLink>
+            </Nav.Item>
+          </Nav>
+        </Navbar>
+      )}
+    </div>
   );
 };
 
