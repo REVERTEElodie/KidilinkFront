@@ -73,7 +73,7 @@ function App() {
         <Route path="*" element={<div>404</div>} />
       </Routes>
       {/* <-- Fin des routes --> */}
-
+      <Photo />
       <AppFooter />
     </div>
   );
