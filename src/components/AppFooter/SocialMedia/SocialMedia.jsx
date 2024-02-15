@@ -1,5 +1,4 @@
 import { Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 import facebookLogo from '../../../assets/socialMedia/facebook.svg';
 import instaLogo from '../../../assets/socialMedia/instagram.svg';
@@ -10,29 +9,21 @@ import './SocialMedia.scss';
 
 const SocialMedia = () => {
   return (
-    <div>
+    <div className="Footer-col">
       <h5>Restez connectés</h5>
       <div>
         <Nav className="flex-row">
-          <Link
-            className="SocialMediaLink"
-            to="https://www.facebook.com/"
-            target="new"
-          >
+          <Nav.Link href="#home">
             <img
               src={facebookLogo}
               width="28"
               height="28"
               className="d-inline-block align-top Footer-svg"
               alt="Facebook logo"
-              target="_blank"
             />
-          </Link>
-          <Link
-            className="SocialMediaLink"
-            to="https://www.instagram.com/"
-            target="new"
-          >
+          </Nav.Link>
+          <Nav.Link href="#home">
+            {' '}
             <img
               src={instaLogo}
               width="28"
@@ -40,12 +31,9 @@ const SocialMedia = () => {
               className="d-inline-block align-top"
               alt="Instagram logo"
             />
-          </Link>
-          <Link
-            className="SocialMediaLink"
-            to="https://www.linkedin.com/"
-            target="new"
-          >
+          </Nav.Link>
+          <Nav.Link href="#home">
+            {' '}
             <img
               src={linkedinLogo}
               width="28"
@@ -53,12 +41,9 @@ const SocialMedia = () => {
               className="d-inline-block align-top"
               alt="Linked'In logo"
             />
-          </Link>
-          <Link
-            className="SocialMediaLink"
-            to="https://twitter.com/"
-            target="new"
-          >
+          </Nav.Link>
+          <Nav.Link href="#home">
+            {' '}
             <img
               src={twitter_xLogo}
               width="28"
@@ -66,7 +51,7 @@ const SocialMedia = () => {
               className="d-inline-block align-top"
               alt="Twitter / X logo"
             />
-          </Link>
+          </Nav.Link>
         </Nav>
       </div>
     </div>

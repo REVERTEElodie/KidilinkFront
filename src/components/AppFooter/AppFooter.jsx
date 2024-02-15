@@ -18,10 +18,8 @@ const AppFooter = () => {
             <BrandLogo />
           </Col>
           <Col md={12} lg={4}>
-            <div className="Footer-col">
-              <ContactButton />
-              <SocialMedia />
-            </div>
+            <ContactButton />
+            <SocialMedia />
           </Col>
         </Row>
       </Container>
