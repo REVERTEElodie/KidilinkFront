@@ -6,7 +6,7 @@ import { Col, Form, Row, Button, InputGroup } from 'react-bootstrap';
 import { changeUserField, submitUserForm } from '../../actions/UserForm';
 
 import './UserForm.scss';
-import UserList from '../../components/UserList/UserList';
+import UserList from '../UserList/UserList';
 
 const UserForm = () => {
   const firstNameValue = useSelector((state) => state.firstName);
@@ -34,7 +34,7 @@ const UserForm = () => {
         <Form onSubmit={onSubmit}>
           <Row>
             <Col>
-              <Form.Group className="mb-3" controlId="userForm.firstname">
+              <Form.Group className="mb-3" controlId="userForm.userRole">
                 <Form.Label>Rôle de l'utilisateur :</Form.Label>
                 <Form.Select
                   name="userRole"
@@ -91,7 +91,7 @@ const UserForm = () => {
           </Row>
           <Row>
             <Col>
-              <Form.Group className="mb-3" controlId="userForm.email">
+              <Form.Group className="mb-3" controlId="userForm.password">
                 <Form.Label>Mot de passe</Form.Label>
                 <Form.Control
                   type="password"
