@@ -31,7 +31,6 @@ Et voilà le projet est crée.
 ## 2 - On installe les dépendances
 
 Pour se faire, il faut installer d'abord Yarn : `npm install --global yarn` 
-Puis on saisit la commande `yarn` dans le terminal en s'assurant qu'on est bien dans le repo du **Front**.
 
 `npm install react-bootstrap bootstrap`
 
@@ -39,6 +38,9 @@ Puis on saisit la commande `yarn` dans le terminal en s'assurant qu'on est bien 
 
 `npm i react-bootstrap-icons`
 
+`npm i react-lottie`
+
+Puis on saisit la commande `yarn` dans le terminal en s'assurant qu'on est bien dans le repo du **Front**.
 
 
 ## 3 - On lance le server et on check la config
