@@ -7,7 +7,7 @@
 
 Il faut le cloner dans le dossier dans lequel on aura le projet REACT concerné.
 
-Voici le lien du repo : `git@github.com:O-clock-Fajitas/React-modele-vite.git`
+Voici le lien du model : https://drive.google.com/drive/folders/1OUAPsxfQSOcAgCHHjOzvsLOT7gkH5Nrc?usp=drive_link
 
 RDV ensuite dans le dossier qui va contenir le nouveau projet :
 
